@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: "Page Not Found"
+description: "The page you requested could not be found."
+permalink: /404.html
+noindex: true
+eleventyExcludeFromCollections: true
+---
+<section class="notfound">
+  <div>
+    <div class="code">404</div>
+    <h1>We couldn&rsquo;t find that page.</h1>
+    <p>The page you were looking for may have been moved or renamed. Let&rsquo;s get you back on track.</p>
+    <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:20px;">
+      <a href="/" class="btn btn-primary">Back to home &rarr;</a>
+      <a href="{{ site.contact.configurator_url }}" class="btn btn-outline-dark" target="_blank" rel="noopener">Build My Phone System</a>
+    </div>
+    <p style="margin-top:40px; font-size:13px; color:var(--ink-mute);">
+      Questions? Call <a href="tel:{{ site.contact.phone_tel }}">{{ site.contact.phone }}</a> or email <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.
+    </p>
+  </div>
+</section>

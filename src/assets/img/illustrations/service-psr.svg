@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6F2EA" rx="6"/>
+  <!-- Growth / stairs metaphor -->
+  <rect x="50" y="220" width="60" height="40" fill="#7A9082" rx="2"/>
+  <rect x="110" y="180" width="60" height="80" fill="#7A9082" opacity="0.85" rx="2"/>
+  <rect x="170" y="140" width="60" height="120" fill="#7A9082" opacity="0.7" rx="2"/>
+  <rect x="230" y="100" width="60" height="160" fill="#7A9082" opacity="0.55" rx="2"/>
+  <rect x="290" y="60" width="60" height="200" fill="#7A9082" opacity="0.4" rx="2"/>
+  <!-- figure climbing -->
+  <circle cx="320" cy="40" r="10" fill="#B85C3B"/>
+  <path d="M310,55 L310,80 L330,80 L330,55 Z" fill="#B85C3B"/>
+  <!-- arrow up -->
+  <path d="M320,20 L320,5 M313,12 L320,5 L327,12" stroke="#C89D4A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

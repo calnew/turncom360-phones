@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#F6F2EA" rx="6"/>
+  <!-- 3 figures overlapping -->
+  <g>
+    <circle cx="150" cy="140" r="36" fill="#7A9082"/>
+    <path d="M100,230 Q100,190 150,190 Q200,190 200,230 L200,340 L100,340 Z" fill="#4A5E52"/>
+  </g>
+  <g>
+    <circle cx="250" cy="120" r="36" fill="#B85C3B"/>
+    <path d="M200,210 Q200,170 250,170 Q300,170 300,210 L300,340 L200,340 Z" fill="#8E3F22"/>
+  </g>
+  <g>
+    <circle cx="350" cy="140" r="36" fill="#C89D4A"/>
+    <path d="M300,230 Q300,190 350,190 Q400,190 400,230 L400,340 L300,340 Z" fill="#8E6C1F"/>
+  </g>
+  <!-- floating energy dots -->
+  <circle cx="120" cy="60" r="5" fill="#B85C3B" opacity="0.5"/>
+  <circle cx="250" cy="50" r="7" fill="#C89D4A" opacity="0.6"/>
+  <circle cx="380" cy="70" r="5" fill="#7A9082" opacity="0.5"/>
+  <circle cx="100" cy="100" r="3" fill="#C89D4A" opacity="0.4"/>
+  <circle cx="420" cy="110" r="4" fill="#B85C3B" opacity="0.4"/>
+</svg>

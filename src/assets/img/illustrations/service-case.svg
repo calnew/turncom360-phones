@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6F2EA" rx="6"/>
+  <!-- winding path from bottom to top -->
+  <path d="M80,280 Q150,220 100,160 Q60,120 180,100 Q260,80 240,40" stroke="#7A9082" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.35"/>
+  <path d="M80,280 Q150,220 100,160 Q60,120 180,100 Q260,80 240,40" stroke="#C89D4A" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="8,8"/>
+  <!-- waypoints -->
+  <circle cx="80" cy="280" r="12" fill="#B85C3B"/>
+  <circle cx="120" cy="190" r="10" fill="#7A9082"/>
+  <circle cx="140" cy="130" r="10" fill="#7A9082"/>
+  <circle cx="220" cy="90" r="10" fill="#7A9082"/>
+  <circle cx="240" cy="40" r="14" fill="#2B3A32"/>
+  <!-- star at destination -->
+  <path d="M240,30 L243,38 L251,38 L245,43 L247,51 L240,46 L233,51 L235,43 L229,38 L237,38 Z" fill="#C89D4A"/>
+</svg>

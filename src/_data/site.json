@@ -1,0 +1,163 @@
+{
+  "name": "TurnCom360 — Plug & Play Phone Systems",
+  "short_name": "TurnCom360 Phones",
+  "tagline": "Pre-programmed business phone systems shipped to your door — plug them in and you're live.",
+  "description": "Pre-programmed business phone systems shipped to your door. No setup, no IT, no contracts. Trusted by 4,000+ businesses since 2006. Build your quote in 3 minutes.",
+  "url": "https://phones.turncom360.com",
+  "locale": "en_US",
+
+  "organization": {
+    "legal_name": "TurnCom360 LLC",
+    "type": "LocalBusiness",
+    "founded": "2006"
+  },
+
+  "contact": {
+    "phone": "(888) 596-2060",
+    "phone_local": "(919) 390-2099",
+    "phone_tel": "+18885962060",
+    "phone_local_tel": "+19193902099",
+    "email": "contact@turncom360.com",
+    "email_direct": "billt@turncom360.com",
+    "configurator_url": "https://config.turncom360.com",
+    "schedule_url": "https://www.turncom360.com/contact#ScheduleCall"
+  },
+
+  "address": {
+    "street": "100 South Garnett Street",
+    "city": "Henderson",
+    "state": "NC",
+    "state_name": "North Carolina",
+    "zip": "27536",
+    "country": "US"
+  },
+
+  "hours": {
+    "weekdays": "Mon–Fri 9am–6pm EST",
+    "support": "24/7 tech support escalation available"
+  },
+
+  "social": {
+    "facebook": "#",
+    "youtube": "#",
+    "linkedin": "https://www.linkedin.com/company/turncom360"
+  },
+
+  "stats": {
+    "years": "20+",
+    "businesses": "4,000+",
+    "states": "10+",
+    "since": "2006"
+  },
+
+  "pricing": [
+    {
+      "name": "Basic",
+      "price": "$265",
+      "period": "/mo",
+      "highlight": false,
+      "recommended_for": "new-business",
+      "features": [
+        "Up to 5 simultaneous calls",
+        "Up to 10 extensions",
+        "Auto-attendant included",
+        "Voicemail to email",
+        "Mobile app + softphone",
+        "Unlimited US calling"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$395",
+      "period": "/mo",
+      "highlight": true,
+      "recommended_for": "upgrading",
+      "features": [
+        "Up to 10 simultaneous calls",
+        "Up to 25 extensions",
+        "Auto-attendant included",
+        "Voicemail to email",
+        "Mobile app + softphone",
+        "Unlimited US calling",
+        "Call recording",
+        "Advanced call routing"
+      ]
+    },
+    {
+      "name": "Elite",
+      "price": "$625",
+      "period": "/mo",
+      "highlight": false,
+      "recommended_for": "enterprise",
+      "features": [
+        "Unlimited simultaneous calls",
+        "Unlimited extensions",
+        "Auto-attendant included",
+        "Voicemail to email",
+        "Mobile app + softphone",
+        "Unlimited US calling",
+        "Call recording",
+        "Advanced call routing",
+        "Priority support queue",
+        "Dedicated account manager"
+      ]
+    }
+  ],
+
+  "testimonials": [
+    {
+      "quote": "TurnCom360 handled our entire phone system transition without a single minute of downtime. Our staff didn't even notice the cutover — the phones just worked differently the next morning.",
+      "name": "Linda Bennett",
+      "title": "Administrative Director, WakeMed Heart & Vascular",
+      "org": "WakeMed"
+    },
+    {
+      "quote": "As a municipality we needed reliability and accountability. TurnCom360 delivered both. Setup was seamless, support is real people who answer, and we've had zero issues in two years.",
+      "name": "Mayor Guillermo Nurse",
+      "title": "Mayor",
+      "org": "City of Oxford, NC"
+    },
+    {
+      "quote": "We were skeptical — we'd been burned by two other VoIP providers. TurnCom360 was completely different. Everything was configured before the phones even arrived. We plugged them in and were live in minutes.",
+      "name": "Kareem Kanston",
+      "title": "Franchise Owner",
+      "org": "Little Caesars"
+    },
+    {
+      "quote": "TurnCom360 understood our rural connectivity challenges and built a system that actually works in our environment. Real support from real people — not a call center in another country.",
+      "name": "Henry Crews",
+      "title": "Director",
+      "org": "Green Rural Redevelopment Organization (GRRO)"
+    }
+  ],
+
+  "nav_main": [
+    { "label": "Home", "url": "/" },
+    { "label": "For New Businesses", "url": "/new-business/" },
+    { "label": "For Upgrading", "url": "/upgrading/" },
+    { "label": "Compare", "url": "/compare/" },
+    { "label": "Build My Quote", "url": "https://config.turncom360.com", "is_cta": true, "external": true }
+  ],
+
+  "nav_footer_pages": [
+    { "label": "Home", "url": "/" },
+    { "label": "New Business", "url": "/new-business/" },
+    { "label": "Upgrading", "url": "/upgrading/" },
+    { "label": "Compare", "url": "/compare/" }
+  ],
+
+  "nav_footer_resources": [
+    { "label": "Main TurnCom360 Site", "url": "https://www.turncom360.com", "external": true },
+    { "label": "Phone Configurator", "url": "https://config.turncom360.com", "external": true }
+  ],
+
+  "nav_footer_legal": [
+    { "label": "Terms of Service", "url": "https://www.turncom360.com/terms/polyc" },
+    { "label": "Privacy Policy", "url": "https://www.turncom360.com/terms/privacy-policy" },
+    { "label": "VoIP E911 Disclosure", "url": "https://www.turncom360.com/terms/voip-e911-disclosure" },
+    { "label": "Service Attachment", "url": "https://www.turncom360.com/terms/newpagecd1606ea" },
+    { "label": "Unlimited Calling Plans", "url": "https://www.turncom360.com/terms/unlimited-calling" }
+  ],
+
+  "build_time": ""
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {#- ============ SEO basics ============ #}
+  <title>{% if title %}{{ title }} | TurnCom360{% else %}Plug &amp; Play Business Phone Systems | TurnCom360{% endif %}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  {% if page.url %}<link rel="canonical" href="{{ site.url }}{{ page.url }}">{% endif %}
+  <meta name="robots" content="{% if noindex %}noindex, nofollow{% else %}index, follow, max-image-preview:large{% endif %}">
+  <meta name="author" content="TurnCom360 LLC">
+  <meta name="theme-color" content="#1a2332">
+
+  {#- ============ Open Graph ============ #}
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{% if title %}{{ title }} | TurnCom360{% else %}Plug &amp; Play Business Phone Systems | TurnCom360{% endif %}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/social/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="TurnCom360 — Plug &amp; Play Phone Systems">
+  <meta property="og:locale" content="{{ site.locale }}">
+
+  {#- ============ Twitter Card ============ #}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if title %}{{ title }} | TurnCom360{% else %}Plug &amp; Play Business Phone Systems | TurnCom360{% endif %}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/assets/img/social/og-default.jpg">
+  <meta name="twitter:image:alt" content="TurnCom360 — Plug &amp; Play Phone Systems">
+
+  {#- ============ Favicons ============ #}
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/icons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#1a2332">
+
+  {#- ============ Google Fonts — DM Serif Display + Source Sans 3 ============ #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+
+  {#- ============ Stylesheet ============ #}
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  {#- ============ Schema.org — LocalBusiness (Telecom) ============ #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TurnCom360 LLC",
+    "alternateName": "TurnCom360",
+    "url": "{{ site.url }}",
+    "logo": "https://lirp.cdn-website.com/e00c4765/dms3rep/multi/opt/Original-fdd5cb7a-1920w.png",
+    "image": "{{ site.url }}/assets/img/social/og-default.jpg",
+    "description": "{{ site.description }}",
+    "telephone": "{{ site.contact.phone }}",
+    "email": "{{ site.contact.email }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address.street }}",
+      "addressLocality": "{{ site.address.city }}",
+      "addressRegion": "{{ site.address.state }}",
+      "postalCode": "{{ site.address.zip }}",
+      "addressCountry": "{{ site.address.country }}"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "areaServed": { "@type": "Country", "name": "US" },
+    "foundingDate": "2006",
+    "sameAs": [
+      "https://www.turncom360.com",
+      "https://www.linkedin.com/company/turncom360"
+    ]
+  }
+  </script>
+
+  {%- if schema %}
+  <script type="application/ld+json">
+  {{ schema | safe }}
+  </script>
+  {%- endif %}
+
+  {%- block extra_head %}{% endblock %}
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  {%- include "header.njk" %}
+
+  <main id="main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+
+  {%- include "footer.njk" %}
+
+  <script src="/assets/js/main.js" defer></script>
+  {%- block extra_scripts %}{% endblock %}
+</body>
+</html>

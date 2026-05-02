@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6F2EA" rx="6"/>
+  <!-- envelope -->
+  <rect x="100" y="120" width="200" height="130" fill="#7A9082" rx="4"/>
+  <path d="M100,120 L200,190 L300,120" stroke="#F6F2EA" stroke-width="3" fill="none"/>
+  <path d="M100,250 L180,190 M300,250 L220,190" stroke="#4A5E52" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- speech bubbles around it -->
+  <g fill="#B85C3B" opacity="0.3">
+    <circle cx="80" cy="80" r="15"/>
+    <path d="M75,95 L80,100 L85,95 Z"/>
+  </g>
+  <g fill="#C89D4A" opacity="0.4">
+    <circle cx="340" cy="90" r="18"/>
+    <path d="M335,105 L340,110 L345,105 Z"/>
+  </g>
+  <!-- plus sign - indicating welcoming new connections -->
+  <circle cx="200" cy="60" r="20" fill="#2B3A32"/>
+  <path d="M192,60 L208,60 M200,52 L200,68" stroke="#C89D4A" stroke-width="3"/>
+</svg>

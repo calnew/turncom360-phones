@@ -1,0 +1,67 @@
+name: Build Site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Download fonts (required for build to include them)
+        run: |
+          cd src/assets/fonts
+          curl -L -o fraunces-variable.woff2 "https://fonts.bunny.net/fraunces/files/fraunces-latin-wght-normal.woff2" || echo "Font download failed — site will build but fall back to system fonts"
+          curl -L -o outfit-variable.woff2 "https://fonts.bunny.net/outfit/files/outfit-latin-wght-normal.woff2" || echo "Font download failed — site will build but fall back to system fonts"
+
+      - name: Build site
+        run: npm run build
+
+      - name: Verify sitemap generated
+        run: |
+          if [ ! -f "_site/sitemap.xml" ]; then
+            echo "ERROR: sitemap.xml was not generated"
+            exit 1
+          fi
+          echo "✅ sitemap.xml present"
+
+      - name: Verify all key pages built
+        run: |
+          for page in index about services psr supportive-employment peer-support community-support-team case-management careers apply employee-portal internal-forms contact faq privacy terms accessibility; do
+            if [ "$page" = "index" ]; then
+              path="_site/index.html"
+            else
+              path="_site/$page/index.html"
+            fi
+            if [ ! -f "$path" ]; then
+              echo "❌ Missing: $path"
+              exit 1
+            fi
+          done
+          if [ ! -f "_site/404.html" ]; then
+            echo "❌ Missing: _site/404.html"
+            exit 1
+          fi
+          echo "✅ All 18 pages built successfully"
+
+      - name: Report output size
+        run: |
+          echo "### Build output size" >> $GITHUB_STEP_SUMMARY
+          du -sh _site/ >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Page count" >> $GITHUB_STEP_SUMMARY
+          find _site -name "*.html" | wc -l >> $GITHUB_STEP_SUMMARY

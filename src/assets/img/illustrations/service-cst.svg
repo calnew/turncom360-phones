@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#F6F2EA" rx="6"/>
+  <!-- central figure -->
+  <circle cx="200" cy="150" r="24" fill="#B85C3B"/>
+  <path d="M165,210 Q165,180 200,180 Q235,180 235,210 L235,260 L165,260 Z" fill="#8E3F22"/>
+  <!-- surrounding team circles with connecting lines -->
+  <g stroke="#C89D4A" stroke-width="2" fill="none" stroke-dasharray="4,4" opacity="0.6">
+    <line x1="200" y1="150" x2="80" y2="80"/>
+    <line x1="200" y1="150" x2="320" y2="80"/>
+    <line x1="200" y1="150" x2="60" y2="220"/>
+    <line x1="200" y1="150" x2="340" y2="220"/>
+  </g>
+  <!-- team nodes -->
+  <circle cx="80" cy="80" r="20" fill="#7A9082"/>
+  <circle cx="320" cy="80" r="20" fill="#4A5E52"/>
+  <circle cx="60" cy="220" r="20" fill="#7A9082" opacity="0.85"/>
+  <circle cx="340" cy="220" r="20" fill="#4A5E52" opacity="0.85"/>
+  <!-- labels -->
+  <text x="80" y="85" text-anchor="middle" fill="#F6F2EA" font-family="sans-serif" font-size="14" font-weight="600">QP</text>
+  <text x="320" y="85" text-anchor="middle" fill="#F6F2EA" font-family="sans-serif" font-size="14" font-weight="600">LC</text>
+  <text x="60" y="225" text-anchor="middle" fill="#F6F2EA" font-family="sans-serif" font-size="14" font-weight="600">CP</text>
+  <text x="340" y="225" text-anchor="middle" fill="#F6F2EA" font-family="sans-serif" font-size="14" font-weight="600">CM</text>
+</svg>

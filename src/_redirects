@@ -1,0 +1,15 @@
+# ============================================================
+# TurnCom360 Phones — URL redirects for Cloudflare Pages
+# ============================================================
+
+# Common variants
+/home                    /                          301
+/home/                   /                          301
+/index                   /                          301
+/index.html              /                          301
+/new-businesses          /new-business/             301
+/new-businesses/         /new-business/             301
+/upgrade                 /upgrading/                301
+/upgrade/                /upgrading/                301
+/comparison              /compare/                  301
+/comparison/             /compare/                  301

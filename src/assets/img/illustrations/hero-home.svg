@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F2EA"/>
+      <stop offset="100%" stop-color="#EFE8DA"/>
+    </linearGradient>
+    <radialGradient id="sageGlow" cx="30%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#7A9082" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7A9082" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="terraGlow" cx="80%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#B85C3B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#B85C3B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- background shape -->
+  <path d="M60,80 Q40,40 100,30 L480,30 Q560,20 560,100 L560,380 Q580,440 500,450 L120,450 Q40,460 40,390 Z"
+        fill="url(#warmGrad)" stroke="#D9CFB8" stroke-width="1"/>
+  <path d="M60,80 Q40,40 100,30 L480,30 Q560,20 560,100 L560,380 Q580,440 500,450 L120,450 Q40,460 40,390 Z"
+        fill="url(#sageGlow)"/>
+  <path d="M60,80 Q40,40 100,30 L480,30 Q560,20 560,100 L560,380 Q580,440 500,450 L120,450 Q40,460 40,390 Z"
+        fill="url(#terraGlow)"/>
+
+  <!-- Two abstract figures in conversation -->
+  <!-- Figure 1 (left, sage) -->
+  <g>
+    <circle cx="200" cy="180" r="32" fill="#7A9082"/>
+    <path d="M150,280 Q150,230 200,230 Q250,230 250,280 L250,400 L150,400 Z" fill="#4A5E52"/>
+    <!-- raised hand in gesture -->
+    <path d="M155,250 Q140,240 135,225 Q130,215 145,210" stroke="#7A9082" stroke-width="14" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Figure 2 (right, terracotta) -->
+  <g>
+    <circle cx="400" cy="200" r="30" fill="#B85C3B"/>
+    <path d="M355,290 Q355,245 400,245 Q445,245 445,290 L445,400 L355,400 Z" fill="#8E3F22"/>
+    <!-- open arm welcoming -->
+    <path d="M445,265 Q460,255 470,245 Q475,235 460,228" stroke="#B85C3B" stroke-width="12" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Connecting gentle arc above figures (symbolizes conversation/trust) -->
+  <path d="M200,110 Q300,40 400,120" stroke="#C89D4A" stroke-width="3" fill="none" stroke-dasharray="6,6" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- floating circles — represents thoughts/connection -->
+  <circle cx="280" cy="80" r="6" fill="#C89D4A" opacity="0.5"/>
+  <circle cx="310" cy="60" r="4" fill="#B85C3B" opacity="0.6"/>
+  <circle cx="340" cy="90" r="5" fill="#7A9082" opacity="0.5"/>
+
+  <!-- ground line -->
+  <line x1="100" y1="400" x2="500" y2="400" stroke="#D9CFB8" stroke-width="2"/>
+</svg>

@@ -1,0 +1,71 @@
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <div class="footer-brand">
+        <img src="https://lirp.cdn-website.com/e00c4765/dms3rep/multi/opt/Original-fdd5cb7a-1920w.png"
+             alt="TurnCom360">
+        <span>TurnCom360</span>
+      </div>
+      <p class="footer-about">Pre-programmed business phone systems shipped to your door. No IT, no contracts, no downtime. Serving businesses across 10+ states since 2006.</p>
+
+      <address style="font-style:normal;">
+        <div class="footer-contact-row">{{ site.address.street }}, {{ site.address.city }}, {{ site.address.state }} {{ site.address.zip }}</div>
+        <div class="footer-contact-row">
+          <a href="tel:{{ site.contact.phone_tel }}">{{ site.contact.phone }}</a> (toll-free) &nbsp;|&nbsp;
+          <a href="tel:{{ site.contact.phone_local_tel }}">{{ site.contact.phone_local }}</a> (local)
+        </div>
+        <div class="footer-contact-row">
+          <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+        </div>
+        <div class="footer-contact-row" style="margin-top:8px; font-size:12px; color:rgba(255,255,255,0.4);">{{ site.hours.weekdays }}</div>
+      </address>
+
+      <div style="margin-top:18px; display:flex; gap:14px;">
+        <!-- TODO: Replace # with real Facebook URL when available -->
+        <a href="{{ site.social.facebook }}" aria-label="TurnCom360 on Facebook" style="color:rgba(255,255,255,0.5); font-size:13px;" target="_blank" rel="noopener">Facebook</a>
+        <!-- TODO: Replace # with real YouTube URL when available -->
+        <a href="{{ site.social.youtube }}" aria-label="TurnCom360 on YouTube" style="color:rgba(255,255,255,0.5); font-size:13px;" target="_blank" rel="noopener">YouTube</a>
+        <a href="{{ site.social.linkedin }}" aria-label="TurnCom360 on LinkedIn" style="color:rgba(255,255,255,0.5); font-size:13px;" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+
+    <div>
+      <h5>Pages</h5>
+      <ul>
+        {%- for item in site.nav_footer_pages %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+    <div>
+      <h5>Resources</h5>
+      <ul>
+        {%- for item in site.nav_footer_resources %}
+        <li><a href="{{ item.url }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+        <li><a href="{{ site.contact.schedule_url }}" target="_blank" rel="noopener">Schedule a Call</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h5>Legal</h5>
+      <ul>
+        {%- for item in site.nav_footer_legal %}
+        <li><a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div>&copy; {{ '' | currentYear }} TurnCom360 LLC. All rights reserved. Henderson, NC.</div>
+    <div class="compliance">
+      <span>HIPAA Compliant</span>
+      <span>US Veteran-Owned</span>
+      <span>Since 2006</span>
+    </div>
+  </div>
+</footer>
