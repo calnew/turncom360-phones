@@ -106,6 +106,8 @@ All site data lives in `src/_data/site.json`:
 
 ---
 
+---
+
 ## GitHub Codespaces setup
 
 This repository is ready to work on from any computer with GitHub Codespaces.
@@ -116,7 +118,7 @@ This repository is ready to work on from any computer with GitHub Codespaces.
 2. Click **Code**.
 3. Open the **Codespaces** tab.
 4. Click **Create codespace on main**.
-5. Wait for the container setup to finish. The postCreateCommand installs dependencies automatically.
+5. Wait for the container setup to finish. The `postCreateCommand` installs dependencies automatically.
 
 ### Project type and tools
 
@@ -124,47 +126,49 @@ This repository is ready to work on from any computer with GitHub Codespaces.
 - Runtime: Node.js 20
 - Package manager: npm
 - Hosting/deploy target: Cloudflare Pages/Workers where configured
-- Main development command: npm start
-- Main build/check command: npm run build
+- Main development command: `npm start`
+- Main build/check command: `npm run build`
 
-Cloudflare Pages deploys from GitHub. Build output: _site.
+Cloudflare Pages deploys from GitHub. Build output: `_site`.
 
 ### Install dependencies
 
 Codespaces runs this automatically when the container is created:
 
-`ash
+```bash
 npm ci
-`
+```
 
-If there is no package-lock.json, use:
+If there is no `package-lock.json`, use:
 
-`ash
+```bash
 npm install
-`
+```
+
+For static-only repos that do not have `package.json`, the devcontainer installs the lightweight `serve` preview tool automatically.
 
 ### Run the app
 
-`ash
+```bash
 npm start
-`
+```
 
 Open the forwarded port from the Codespaces **Ports** panel.
 
 ### Test before committing
 
-`ash
+```bash
 npm run build
-`
+```
 
 ### Commit and push changes
 
-`ash
+```bash
 git status
 git add .
 git commit -m "Describe your change"
 git push
-`
+```
 
 After pushing, GitHub and Cloudflare will handle the configured build/deploy flow.
 
